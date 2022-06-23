@@ -29,7 +29,7 @@ in different plants around the world as different tasks to learn in a CL fashion
 To obtain the design matrix to train the CL-based multi-label classifier, we
 draw inspiration from the paper "A Deep Learning Approach for Rare Alarms Predictions in Industrial Equipment" ([link](https://ieeexplore.ieee.org/iel7/8856/4358066/09627935.pdf)), so we consider input windows having a length of 1720 minutes, and output windows of 480 minutes.
 
-![dataset_distribution](images/dataset_distribution.png)
+![dataset_distribution](images/dataset_distribution.PNG)
 
 Based on label frequencies, we split them into three groups to better assess the performance:
 1. high-freq: labels {4,6,7,13}
@@ -45,7 +45,7 @@ Based on label frequencies, we split them into three groups to better assess the
 ### 3.1 Complexity of algorithms
 
 Table with the complexity of each algorithm
-![table_complexity](images/table_complexity.png)
+![table_complexity](images/table_complexity.PNG)
 
 More details can be found in the supplementary material([link](https://github.com/dallepezze/bat-ocdm/blob/main/Computational%20Complexity.pdf)).
 
@@ -61,7 +61,7 @@ labels, while Total consider all the labels together.
 
 
 ### 3.3 Speed of algorithms
-![tempi_gestion_memoria](images/tempi_gestion_memoria.PNG)
+![tempi_gestion_memoria](images/memory_time.png)
 
 
 
