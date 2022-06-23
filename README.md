@@ -16,7 +16,9 @@ We validate our approach on a real-world multi-label Alarm Forecasting problem f
 ## 1. BAT-OCDM(Balanced Among Tasks-OCDM)
 
 Scheme of the Proposed Approach
-![bat_ocdm_schema](images/bat_ocdm_schema-1.png)
+<br />
+<img src="images/bat_ocdm_schema-1.png" alt="bat_ocdm_schema" width="75%"/>
+
 <br />
 <br />
 
@@ -29,7 +31,9 @@ in different plants around the world as different tasks to learn in a CL fashion
 To obtain the design matrix to train the CL-based multi-label classifier, we
 draw inspiration from the paper "A Deep Learning Approach for Rare Alarms Predictions in Industrial Equipment" ([link](https://ieeexplore.ieee.org/iel7/8856/4358066/09627935.pdf)), so we consider input windows having a length of 1720 minutes, and output windows of 480 minutes.
 
-![dataset_distribution](images/dataset_distribution.PNG)
+
+<img src="images/dataset_distribution.PNG" alt="dataset_distribution" width="75%"/>
+
 
 Based on label frequencies, we split them into three groups to better assess the performance:
 1. high-freq: labels {4,6,7,13}
@@ -45,7 +49,8 @@ Based on label frequencies, we split them into three groups to better assess the
 ### 3.1 Complexity of algorithms
 
 Table with the complexity of each algorithm
-![table_complexity](images/table_complexity.PNG)
+<img src="images/table_complexity.PNG" alt="table_complexity" width="75%"/>
+
 
 More details can be found in the supplementary material([link](https://github.com/dallepezze/bat-ocdm/blob/main/Computational%20Complexity.pdf)).
 
@@ -57,11 +62,14 @@ two metrics defined like in Sec. 4.1. Above is the ***Average macro f1*** $S_T$ 
 ***Average Forgetting*** $F_T$ . Based on the column, these metrics are calculated on a different
 set of labels. Low, Medium, and High are label sets grouped by the frequency of the
 labels, while Total consider all the labels together.
-![table_performance](images/table_performance.PNG)
+
+
+<img src="images/table_performance.PNG" alt="table_performance" width="75%"/>
 
 
 ### 3.3 Speed of algorithms
-![tempi_gestion_memoria](images/memory_time.png)
+<img src="images/memory_time.png" alt="memory_time" width="50%"/>
+
 
 
 
