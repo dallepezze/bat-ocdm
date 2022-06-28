@@ -47,6 +47,10 @@ Based on label frequencies, we split them into three groups to better assess the
 ## 3. Results
 
 ### 3.1 Complexity of algorithms
+We develop BAT-OCDM (Balanced Among Tasks OCDM),
+an approach suitable for both CIL and DIL. The computational complexity
+of the proposed approach is logarithmic in the number of tasks T, while the previous approach
+OCDM is linear with regard to T.
 
 Table with the complexity of each algorithm
 <img src="images/table_complexity.PNG" alt="table_complexity" width="75%"/>
@@ -56,18 +60,21 @@ More details can be found in the supplementary material([link](https://github.co
 
 
 ### 3.2 Performance of algorithms
-Table with the performance of each algorithm<br />
 The table contains the performance for each approach. In each cell are showed
 two metrics defined like in Sec. 4.1. Above is the ***Average macro f1*** $S_T$ and below the
 ***Average Forgetting*** $F_T$ . Based on the column, these metrics are calculated on a different
-set of labels. Low, Medium, and High are label sets grouped by the frequency of the
-labels, while Total consider all the labels together.
+set of labels. Low, Medium, and High are label sets grouped by the frequency of the labels, while Total consider all the labels together.
+<br /><br />
+BAT-OCDM shows superior performance to OCDM for low-freq, medium-freq and high-freq labels.
+In particular, the drop in performance for higher frequency labels observed for OCDM is much lower. Moreover, the computational time required for memory update is four times lower for BAT-OCDM than classic OCDM. This result is in line with the envisioned theoretical complexity of the proposed algorithm.
 
 
+Table with the performance of each algorithm<br />
 <img src="images/table_performance.PNG" alt="table_performance" width="75%"/>
 
 
 ### 3.3 Speed of algorithms
+Plot with the time at each task for all approaches.<br />
 <img src="images/memory_time.png" alt="memory_time" width="50%"/>
 
 
